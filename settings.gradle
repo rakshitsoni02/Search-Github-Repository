@@ -1,0 +1,24 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+rootProject.name = "RaxCookBook"
+include ':app'
+include ':shared:ui-components'
+include ':core'
+include ':repository-search:data'
+include ':repository-search:domain'
+include ':repository-search:presentation'
+include ':test'
+include ':android-test'

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_overview">Browse Repos</string>
+    <string name="error_text">Oops, We are facing issues</string>
+    <string name="empty_result_text">No result available</string>
+    <string name="search_repos">Search repositories</string>
+    <string name="loading">Loading Result</string>
+    <string name="end_of_result">All caught up 👀</string>
+    <string name="error_api_rate_limit">API Limit Exceeded 😢</string>
+</resources>
