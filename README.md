@@ -14,6 +14,7 @@ The codebase focuses 👓 on following key things:
 - Hilt
 - UseCases
 - Kotlin + RxJava3
+- JetPack Compose
 - Modularize approach
 - Material3 Theme
 - And testing 🛠
@@ -25,7 +26,7 @@ Setup:
 - hit run 🚀
 
 Note:
-- Initial scrolling can be slow in compose due to debug build [reference](https://developer.android.com/jetpack/compose/lists#measuring-performance)
+- Initial rendering can be slow in compose due to debug build [reference](https://developer.android.com/jetpack/compose/lists#measuring-performance)
 
 Feel free to write me in case of questions
 
