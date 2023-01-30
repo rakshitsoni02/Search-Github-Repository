@@ -12,6 +12,7 @@ buildscript {
 
     dependencies {
         classpath(BaseDependencies.gradle)
+        classpath(BaseDependencies.gradleR8)
         classpath(BaseDependencies.kotlinGradle)
         classpath(BaseDependencies.detektPlugin)
     }

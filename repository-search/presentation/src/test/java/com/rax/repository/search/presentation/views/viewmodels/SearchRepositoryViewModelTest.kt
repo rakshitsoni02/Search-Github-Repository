@@ -1,7 +1,6 @@
 package com.rax.repository.search.presentation.views.viewmodels
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
-import androidx.lifecycle.Observer
 import androidx.paging.PagingData
 import com.rax.core.repository.exceptions.ApiException
 import com.rax.repository.search.domain.usecases.SearchRepositoryUseCase
@@ -45,21 +44,6 @@ class SearchRepositoryViewModelTest {
             searchRepo = searchRepo
         )
     }
-
-    @Test
-    fun `GIVEN empty repo WHEN onViewCreated invoked THEN verify correct view state sequences is emitted`() =
-        runTest {
-            // GIVEN
-            val viewStateObserver =
-                mockk<Observer<SearchRepoViewState>> { every { onChanged(any()) } just Runs }
-            viewModel.outputs.viewState.observeForever(viewStateObserver)
-            // WHEN
-            viewModel.inputs.onViewCreated()
-            // THEN
-            verify(exactly = 1) {
-                viewStateObserver.onChanged(SearchRepoViewState.Empty)
-            }
-        }
 
     @Test
     fun `GIVEN data error WHEN onSearchTextChanged invoked THEN verify error popUp is emitted`() =

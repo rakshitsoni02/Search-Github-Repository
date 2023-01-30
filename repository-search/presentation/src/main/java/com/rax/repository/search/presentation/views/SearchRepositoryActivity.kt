@@ -23,6 +23,5 @@ class SearchRepositoryActivity : AppCompatActivity() {
                 SearchRepositoryScreen(viewModel)
             }
         }
-        viewModel.inputs.onViewCreated()
     }
 }

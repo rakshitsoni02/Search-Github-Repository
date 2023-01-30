@@ -23,7 +23,7 @@ class SearchRepositoryViewModel @Inject constructor(
     private val searchRepo: SearchRepositoryUseCase,
 ) : ViewModel(), SearchRepositoryInputs, SearchRepositoryOutputs {
 
-    private val _viewState = MutableLiveData<SearchRepoViewState>()
+    private val _viewState = MutableLiveData<SearchRepoViewState>(SearchRepoViewState.Empty)
     private val _popUp = MutableLiveData<SearchRepoPopUp?>()
 
     private var searchJob: Job? = null
@@ -40,10 +40,6 @@ class SearchRepositoryViewModel @Inject constructor(
 
     val inputs: SearchRepositoryInputs = this
     val outputs: SearchRepositoryOutputs = this
-
-    override fun onViewCreated() {
-        _viewState.value = SearchRepoViewState.Empty
-    }
 
     override fun onSearchTextChanged(text: String) {
         searchQuery = text

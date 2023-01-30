@@ -12,6 +12,7 @@ private object Versions {
 
     val kotlinVersion = versionProperties["kotlinVersion"]
     val androidGradlePlugin = versionProperties["gradleVersion"]
+    const val androidGradlePluginR8 = "4.0.48"
     val detekt = versionProperties["detekt"]
 
     const val googleMaterial = "1.7.0"
@@ -64,6 +65,7 @@ object BaseDependencies {
     val kotlinGradle = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlinVersion}"
     val detektPlugin = "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:${Versions.detekt}"
     val gradle = "com.android.tools.build:gradle:${Versions.androidGradlePlugin}"
+    val gradleR8 = "com.android.tools:r8:${Versions.androidGradlePluginR8}"
     const val daggerHilt = "com.google.dagger:hilt-android-gradle-plugin:${Versions.hiltAndroid}"
     const val jodaTime = "joda-time:joda-time:${Versions.jodaTime}"
     const val jodaTimeConvert = "org.joda:joda-convert:${Versions.jodaTimeConvert}"

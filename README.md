@@ -1,5 +1,5 @@
 
-# GitHub Repository App ✨
+# Search Repository App ✨
 The app allows user to repositories from github, The app uses MVVM architecture pattern using 💯% kotlin approach 🤘  
 the solution is focused to have production level quality and scalability
 
