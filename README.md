@@ -13,7 +13,8 @@ The codebase focuses 👓 on following key things:
 - Clean Architecture Code structuring, style and comments & description
 - Hilt
 - UseCases
-- Kotlin + RxJava3
+- Kotlin
+- Coroutines
 - JetPack Compose
 - Modularize approach
 - Material3 Theme
